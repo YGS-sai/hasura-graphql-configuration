@@ -1,0 +1,352 @@
+resource_version: 27
+metadata:
+  version: 3
+  sources:
+    - name: chinook-database-Ygs-Sai
+      kind: postgres
+      tables:
+        - table:
+            name: album
+            schema: public
+          object_relationships:
+            - name: artist
+              using:
+                manual_configuration:
+                  column_mapping:
+                    album_id: album_id
+                  insertion_order: null
+                  remote_table:
+                    name: album
+                    schema: public
+            - name: artists
+              using:
+                manual_configuration:
+                  column_mapping:
+                    artist_id: artist_id
+                  insertion_order: null
+                  remote_table:
+                    name: artist
+                    schema: public
+          array_relationships:
+            - name: tracks
+              using:
+                foreign_key_constraint_on:
+                  column: album_id
+                  table:
+                    name: track
+                    schema: public
+          insert_permissions:
+            - role: artists
+              permission:
+                check:
+                  artist_id:
+                    _eq: X-Hasura-User-Id
+                columns:
+                  - artist_id
+                  - title
+              comment: ''
+          select_permissions:
+            - role: artist_role
+              permission:
+                columns:
+                  - album_id
+                  - artist_id
+                  - title
+                filter:
+                  artist_id:
+                    _eq: '5'
+              comment: ''
+            - role: artists
+              permission:
+                columns:
+                  - album_id
+                  - artist_id
+                  - title
+                filter:
+                  artist_id:
+                    _eq: X-HASURA-ARTIST-ID
+              comment: ''
+          update_permissions:
+            - role: artists
+              permission:
+                columns:
+                  - title
+                filter:
+                  artist_id:
+                    _eq: X-Hasura-User-Id
+                check: null
+              comment: ''
+          delete_permissions:
+            - role: artists
+              permission:
+                filter:
+                  artist_id:
+                    _eq: X-Hasura-User-Id
+              comment: ''
+        - table:
+            name: artist
+            schema: public
+          array_relationships:
+            - name: albums
+              using:
+                foreign_key_constraint_on:
+                  column: artist_id
+                  table:
+                    name: album
+                    schema: public
+          select_permissions:
+            - role: artists
+              permission:
+                columns:
+                  - artist_id
+                  - name
+                filter:
+                  artist_id:
+                    _eq: X-Hasura-User-Id
+              comment: ''
+        - table:
+            name: customer
+            schema: public
+          object_relationships:
+            - name: employee
+              using:
+                foreign_key_constraint_on: support_rep_id
+          array_relationships:
+            - name: invoices
+              using:
+                foreign_key_constraint_on:
+                  column: customer_id
+                  table:
+                    name: invoice
+                    schema: public
+        - table:
+            name: employee
+            schema: public
+          object_relationships:
+            - name: employee
+              using:
+                foreign_key_constraint_on: reports_to
+          array_relationships:
+            - name: customers
+              using:
+                foreign_key_constraint_on:
+                  column: support_rep_id
+                  table:
+                    name: customer
+                    schema: public
+            - name: employees
+              using:
+                foreign_key_constraint_on:
+                  column: reports_to
+                  table:
+                    name: employee
+                    schema: public
+        - table:
+            name: genre
+            schema: public
+          array_relationships:
+            - name: tracks
+              using:
+                foreign_key_constraint_on:
+                  column: genre_id
+                  table:
+                    name: track
+                    schema: public
+        - table:
+            name: invoice
+            schema: public
+          object_relationships:
+            - name: customer
+              using:
+                foreign_key_constraint_on: customer_id
+          array_relationships:
+            - name: invoice_lines
+              using:
+                foreign_key_constraint_on:
+                  column: invoice_id
+                  table:
+                    name: invoice_line
+                    schema: public
+        - table:
+            name: invoice_line
+            schema: public
+          object_relationships:
+            - name: invoice
+              using:
+                foreign_key_constraint_on: invoice_id
+            - name: track
+              using:
+                foreign_key_constraint_on: track_id
+        - table:
+            name: media_type
+            schema: public
+          array_relationships:
+            - name: tracks
+              using:
+                foreign_key_constraint_on:
+                  column: media_type_id
+                  table:
+                    name: track
+                    schema: public
+        - table:
+            name: playlist
+            schema: public
+          array_relationships:
+            - name: playlist_tracks
+              using:
+                foreign_key_constraint_on:
+                  column: playlist_id
+                  table:
+                    name: playlist_track
+                    schema: public
+        - table:
+            name: playlist_track
+            schema: public
+          object_relationships:
+            - name: playlist
+              using:
+                foreign_key_constraint_on: playlist_id
+            - name: track
+              using:
+                foreign_key_constraint_on: track_id
+        - table:
+            name: track
+            schema: public
+          object_relationships:
+            - name: album
+              using:
+                manual_configuration:
+                  column_mapping:
+                    album_id: album_id
+                  insertion_order: null
+                  remote_table:
+                    name: album
+                    schema: public
+            - name: genre
+              using:
+                foreign_key_constraint_on: genre_id
+            - name: media_type
+              using:
+                foreign_key_constraint_on: media_type_id
+          array_relationships:
+            - name: invoice_lines
+              using:
+                foreign_key_constraint_on:
+                  column: track_id
+                  table:
+                    name: invoice_line
+                    schema: public
+            - name: playlist_tracks
+              using:
+                foreign_key_constraint_on:
+                  column: track_id
+                  table:
+                    name: playlist_track
+                    schema: public
+          select_permissions:
+            - role: artists
+              permission:
+                columns:
+                  - album_id
+                  - name
+                  - track_id
+                filter:
+                  album:
+                    artist_id:
+                      _eq: X-Hasura-User-Id
+              comment: ''
+      configuration:
+        connection_info:
+          database_url:
+            connection_parameters:
+              database: chinook
+              host: dpg-cqdrli8gph6c73aca6eg-a.oregon-postgres.render.com
+              password: rwuQPVNyWdlN8uOplkTET84Rw8IS2Acf
+              port: 5432
+              username: chinook_database_ygs_sai_user
+          isolation_level: read-committed
+          use_prepared_statements: false
+  query_collections:
+    - name: allowed-queries
+      definition:
+        queries:
+          - name: GetArtistsCount
+            query: |-
+              query GetArtistsCount {
+                artist_aggregate {
+                  aggregate {
+                    count
+                  }
+                }
+              }
+          - name: GetFirstTrackOfAlbums
+            query: |-
+              query GetFirstTrackOfAlbums {
+                album(order_by: {title: asc}) {
+                  title
+                  tracks(limit: 1, order_by: {track_id: asc}) {
+                    name
+                  }
+                }
+              }
+          - name: AddArtistAndAlbum
+            query: |-
+              mutation AddArtistAndAlbum {
+                insert_artist_one(object: {artist_id: 276, name: "John Doe", albums: {data: {album_id: 348, title: "The Best of John"}}}) {
+                  artist_id
+                  name
+                  albums {
+                    album_id
+                    title
+                  }
+                }
+              }
+          - name: albumartistid5
+            query: |-
+              query albumartistid5 {
+                album {
+                  album_id
+                  title
+                }
+              }
+  allowlist:
+    - collection: allowed-queries
+      scope:
+        global: true
+  rest_endpoints:
+    - comment: ''
+      definition:
+        query:
+          collection_name: allowed-queries
+          query_name: AddArtistAndAlbum
+      methods:
+        - POST
+      name: AddArtistAndAlbum
+      url: addartistandalbum
+    - comment: ''
+      definition:
+        query:
+          collection_name: allowed-queries
+          query_name: albumartistid5
+      methods:
+        - GET
+      name: albumartistid5
+      url: albumartistid5
+    - comment: ''
+      definition:
+        query:
+          collection_name: allowed-queries
+          query_name: GetArtistsCount
+      methods:
+        - GET
+      name: GetArtistsCount
+      url: getartistscount
+    - comment: ''
+      definition:
+        query:
+          collection_name: allowed-queries
+          query_name: GetFirstTrackOfAlbums
+      methods:
+        - GET
+      name: GetFirstTrackOfAlbums
+      url: getfirsttrackofalbums
