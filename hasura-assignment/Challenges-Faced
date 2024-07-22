@@ -1,0 +1,51 @@
+Challenges Encountered and Troubleshooting Steps
+
+1.Setting Up Hasura with Chinook Dataset**
+   - Challenge: Setting up a new Hasura instance with the Chinook dataset and configuring permissions for artist table.
+   - Troubleshooting Steps:
+     - Followed detailed steps to initialize a Hasura instance.
+     - Imported the Chinook dataset into a PostgreSQL database.
+     - Configured Hasura to connect to the PostgreSQL database and introspected the schema.
+
+2. GraphQL Query Execution with Specific Roles
+   - Challenge: Ensuring that GraphQL queries are executed with the `artist_role`.
+   - Troubleshooting Steps:
+     - Configured permissions for the `artist_role` in Hasura.
+     - Executed sample queries to ensure they were being run with the correct permissions.
+
+3. Adding New Artist and Album Using GraphQL Mutation
+   - Challenge: Adding a new artist and one of their albums not present in the dataset.
+   - Troubleshooting Steps:
+     - Crafted a GraphQL mutation to insert a new artist and album.
+     - Encountered a `Not-NULL violation` error due to missing `artist_id`.
+     - Resolved by explicitly providing an `artist_id`.
+
+4. Tracking the changes in database
+   - Challenge: Making sure to track any new changes to database.
+   - Troubleshooting Steps:
+     - Even after making the changes in permissions and creating the relationships to obtain the required output.
+     - Encountered multiple errors due to missing permissions and insufficient relationships.
+     - Resolved by explicitly tracking all the untracked changes from data tab and also reloaded the metadata from settings tab.
+
+5. Retrieving Artist with Most Albums
+   - Challenge: Writing a SQL query to retrieve the artist with the most albums and their name.
+   - Troubleshooting Steps:
+     - Started with a basic query to count albums per artist.
+     - Joined with the `artist` table to include the artist's name.
+     - Simplified and optimized the query for better readability.
+
+6. Exporting Metadata in YAML Format
+   - Challenge: Exporting Hasura metadata in YAML format is not a straightforward option.
+   - Troubleshooting Steps:
+     - Navigated to the Hasura console settings.
+     - Used the "Export Metadata" feature to download the metadata in JSON format.And then converted it to YAML format.
+
+7. **Including Media Type Name and Average Runtime in Track Count Query**
+   - **Challenge**: Including media type names and average runtime in a track count query.
+   - **Troubleshooting Steps**:
+     - Joined the `tracks` table with the `media_types` table.
+     - Calculated the average runtime and included the media type name in the result.
+     - Simplified and optimized the query for better readability.
+
+
+Throughout the task, the primary challenges were related to schema configuration, permissions, and crafting efficient queries.
