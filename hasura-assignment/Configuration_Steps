@@ -1,0 +1,9 @@
+Created an account on Hasura Cloud and initiated a new project named "Talented-Alpaca."
+Linked a PostgreSQL database from Render in the Hasura Cloud data section.
+Connected this PostgreSQL database to pgAdmin 4.
+Loaded the Chinook data set into the PostgreSQL database.
+Linked the Chinook data set to the Hasura dashboard in the Data tab.
+Verified the database setup and viewed the tables in the Hasura dashboard.
+Used the Hasura dashboard to configure tables, relationships, and permissions according to the given requirements.
+Defined permissions to ensure that artists can only access their own albums and cannot use aggregate queries.
+Developed and tested GraphQL queries using the GraphiQL playground in the API tab.
