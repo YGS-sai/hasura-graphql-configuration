@@ -1,0 +1,2797 @@
+2. List the First Track of Every Album by Every Artist in Ascending Order
+
+GraphQL Query:
+
+query GetFirstTrackOfAlbums {
+  album(order_by: {title: asc}) {
+    title
+    tracks(limit: 1, order_by: {track_id: asc}) {
+      name
+    }
+  }
+}
+
+GraphQL Result Set:
+
+{
+  "data": {
+    "album": [
+      {
+        "title": "[1997] Black Light Syndrome",
+        "tracks": [
+          {
+            "name": "The Sun Road"
+          }
+        ]
+      },
+      {
+        "title": "20th Century Masters - The Millennium Collection: The Best of Scorpions",
+        "tracks": [
+          {
+            "name": "Rock You Like a Hurricane"
+          }
+        ]
+      },
+      {
+        "title": "Ace Of Spades",
+        "tracks": [
+          {
+            "name": "Ace Of Spades"
+          }
+        ]
+      },
+      {
+        "title": "Achtung Baby",
+        "tracks": [
+          {
+            "name": "Zoo Station"
+          }
+        ]
+      },
+      {
+        "title": "A Copland Celebration, Vol. I",
+        "tracks": [
+          {
+            "name": "Fanfare for the Common Man"
+          }
+        ]
+      },
+      {
+        "title": "Acústico",
+        "tracks": [
+          {
+            "name": "Comida"
+          }
+        ]
+      },
+      {
+        "title": "Acústico MTV",
+        "tracks": [
+          {
+            "name": "Vulcão Dub - Fui Eu"
+          }
+        ]
+      },
+      {
+        "title": "Acústico MTV [Live]",
+        "tracks": [
+          {
+            "name": "Girassol"
+          }
+        ]
+      },
+      {
+        "title": "Adams, John: The Chairman Dances",
+        "tracks": [
+          {
+            "name": "Two Fanfares for Orchestra: II. Short Ride in a Fast Machine"
+          }
+        ]
+      },
+      {
+        "title": "Adorate Deum: Gregorian Chant from the Proper of the Mass",
+        "tracks": [
+          {
+            "name": "Intoitus: Adorate Deum"
+          }
+        ]
+      },
+      {
+        "title": "Afrociberdelia",
+        "tracks": [
+          {
+            "name": "Mateus Enter"
+          }
+        ]
+      },
+      {
+        "title": "Album Of The Year",
+        "tracks": [
+          {
+            "name": "Collision"
+          }
+        ]
+      },
+      {
+        "title": "Alcohol Fueled Brewtality Live! [Disc 1]",
+        "tracks": [
+          {
+            "name": "Intro/ Low Down"
+          }
+        ]
+      },
+      {
+        "title": "Alcohol Fueled Brewtality Live! [Disc 2]",
+        "tracks": [
+          {
+            "name": "Heart Of Gold"
+          }
+        ]
+      },
+      {
+        "title": "Allegri: Miserere",
+        "tracks": [
+          {
+            "name": "Miserere mei, Deus"
+          }
+        ]
+      },
+      {
+        "title": "All That You Can't Leave Behind",
+        "tracks": [
+          {
+            "name": "Beautiful Day"
+          }
+        ]
+      },
+      {
+        "title": "A Matter of Life and Death",
+        "tracks": [
+          {
+            "name": "Different World"
+          }
+        ]
+      },
+      {
+        "title": "American Idiot",
+        "tracks": [
+          {
+            "name": "American Idiot"
+          }
+        ]
+      },
+      {
+        "title": "...And Justice For All",
+        "tracks": [
+          {
+            "name": "Blackened"
+          }
+        ]
+      },
+      {
+        "title": "Angel Dust",
+        "tracks": [
+          {
+            "name": "Land Of Sunshine"
+          }
+        ]
+      },
+      {
+        "title": "Ao Vivo [IMPORT]",
+        "tracks": [
+          {
+            "name": "Faixa Amarela"
+          }
+        ]
+      },
+      {
+        "title": "Appetite for Destruction",
+        "tracks": [
+          {
+            "name": "Welcome to the Jungle"
+          }
+        ]
+      },
+      {
+        "title": "Aquaman",
+        "tracks": [
+          {
+            "name": "Pilot"
+          }
+        ]
+      },
+      {
+        "title": "A Real Dead One",
+        "tracks": [
+          {
+            "name": "The Number Of The Beast"
+          }
+        ]
+      },
+      {
+        "title": "A Real Live One",
+        "tracks": [
+          {
+            "name": "Be Quick Or Be Dead"
+          }
+        ]
+      },
+      {
+        "title": "Are You Experienced?",
+        "tracks": [
+          {
+            "name": "Foxy Lady"
+          }
+        ]
+      },
+      {
+        "title": "Armada: Music from the Courts of England and Spain",
+        "tracks": [
+          {
+            "name": "Pavan, Lachrimae Antiquae"
+          }
+        ]
+      },
+      {
+        "title": "Arquivo II",
+        "tracks": [
+          {
+            "name": "Trac Trac"
+          }
+        ]
+      },
+      {
+        "title": "Arquivo Os Paralamas Do Sucesso",
+        "tracks": [
+          {
+            "name": "Caleidoscópio"
+          }
+        ]
+      },
+      {
+        "title": "As Canções de Eu Tu Eles",
+        "tracks": [
+          {
+            "name": "Óia Eu Aqui De Novo"
+          }
+        ]
+      },
+      {
+        "title": "A-Sides",
+        "tracks": [
+          {
+            "name": "Nothing To Say"
+          }
+        ]
+      },
+      {
+        "title": "A Soprano Inspired",
+        "tracks": [
+          {
+            "name": "Ave Maria"
+          }
+        ]
+      },
+      {
+        "title": "A TempestadeTempestade Ou O Livro Dos Dias",
+        "tracks": [
+          {
+            "name": "Natália"
+          }
+        ]
+      },
+      {
+        "title": "Audioslave",
+        "tracks": [
+          {
+            "name": "Cochise"
+          }
+        ]
+      },
+      {
+        "title": "Axé Bahia 2001",
+        "tracks": [
+          {
+            "name": "Dig-Dig, Lambe-Lambe (Ao Vivo)"
+          }
+        ]
+      },
+      {
+        "title": "Bach: Goldberg Variations",
+        "tracks": [
+          {
+            "name": "Aria Mit 30 Veränderungen, BWV 988 \"Goldberg Variations\": Aria"
+          }
+        ]
+      },
+      {
+        "title": "Bach: Orchestral Suites Nos. 1 - 4",
+        "tracks": [
+          {
+            "name": "Suite No. 3 in D, BWV 1068: III. Gavotte I & II"
+          }
+        ]
+      },
+      {
+        "title": "Bach: The Brandenburg Concertos",
+        "tracks": [
+          {
+            "name": "Concerto No.2 in F Major, BWV1047, I. Allegro"
+          }
+        ]
+      },
+      {
+        "title": "Bach: The Cello Suites",
+        "tracks": [
+          {
+            "name": "Suite for Solo Cello No. 1 in G Major, BWV 1007: I. Prélude"
+          }
+        ]
+      },
+      {
+        "title": "Bach: Toccata & Fugue in D Minor",
+        "tracks": [
+          {
+            "name": "Toccata and Fugue in D Minor, BWV 565: I. Toccata"
+          }
+        ]
+      },
+      {
+        "title": "Bach: Violin Concertos",
+        "tracks": [
+          {
+            "name": "Concerto for 2 Violins in D Minor, BWV 1043: I. Vivace"
+          }
+        ]
+      },
+      {
+        "title": "BackBeat Soundtrack",
+        "tracks": [
+          {
+            "name": "Money"
+          }
+        ]
+      },
+      {
+        "title": "Back to Black",
+        "tracks": [
+          {
+            "name": "Rehab"
+          }
+        ]
+      },
+      {
+        "title": "Balls to the Wall",
+        "tracks": [
+          {
+            "name": "Balls to the Wall"
+          }
+        ]
+      },
+      {
+        "title": "Bark at the Moon (Remastered)",
+        "tracks": [
+          {
+            "name": "Bark at the Moon"
+          }
+        ]
+      },
+      {
+        "title": "Bartok: Violin & Viola Concertos",
+        "tracks": [
+          {
+            "name": "Sonata for Solo Violin: IV: Presto"
+          }
+        ]
+      },
+      {
+        "title": "Barulhinho Bom",
+        "tracks": [
+          {
+            "name": "Arrepio"
+          }
+        ]
+      },
+      {
+        "title": "Battlestar Galactica (Classic), Season 1",
+        "tracks": [
+          {
+            "name": "Battlestar Galactica, Pt. 1"
+          }
+        ]
+      },
+      {
+        "title": "Battlestar Galactica, Season 3",
+        "tracks": [
+          {
+            "name": "Occupation / Precipice"
+          }
+        ]
+      },
+      {
+        "title": "Battlestar Galactica: The Story So Far",
+        "tracks": [
+          {
+            "name": "Battlestar Galactica: The Story So Far"
+          }
+        ]
+      },
+      {
+        "title": "BBC Sessions [Disc 1] [Live]",
+        "tracks": [
+          {
+            "name": "You Shook Me"
+          }
+        ]
+      },
+      {
+        "title": "BBC Sessions [Disc 2] [Live]",
+        "tracks": [
+          {
+            "name": "Immigrant Song"
+          }
+        ]
+      },
+      {
+        "title": "Beethoven Piano Sonatas: Moonlight & Pastorale",
+        "tracks": [
+          {
+            "name": "Piano Sonata No. 14 in C Sharp Minor, Op. 27, No. 2, \"Moonlight\": I. Adagio sostenuto"
+          }
+        ]
+      },
+      {
+        "title": "Beethoven: Symhonies Nos. 5 & 6",
+        "tracks": [
+          {
+            "name": "Symphony No.5 in C Minor: I. Allegro con brio"
+          }
+        ]
+      },
+      {
+        "title": "Beethoven: Symphony No. 6 'Pastoral' Etc.",
+        "tracks": [
+          {
+            "name": "Prometheus Overture, Op. 43"
+          }
+        ]
+      },
+      {
+        "title": "Berlioz: Symphonie Fantastique",
+        "tracks": [
+          {
+            "name": "Symphonie Fantastique, Op. 14: V. Songe d'une nuit du sabbat"
+          }
+        ]
+      },
+      {
+        "title": "Beyond Good And Evil",
+        "tracks": [
+          {
+            "name": "War (The Process)"
+          }
+        ]
+      },
+      {
+        "title": "Big Ones",
+        "tracks": [
+          {
+            "name": "Walk On Water"
+          }
+        ]
+      },
+      {
+        "title": "Bizet: Carmen Highlights",
+        "tracks": [
+          {
+            "name": "Carmen: Overture"
+          }
+        ]
+      },
+      {
+        "title": "Black Album",
+        "tracks": [
+          {
+            "name": "Enter Sandman"
+          }
+        ]
+      },
+      {
+        "title": "Black Sabbath",
+        "tracks": [
+          {
+            "name": "Black Sabbath"
+          }
+        ]
+      },
+      {
+        "title": "Black Sabbath Vol. 4 (Remaster)",
+        "tracks": [
+          {
+            "name": "Wheels Of Confusion / The Straightener"
+          }
+        ]
+      },
+      {
+        "title": "Blizzard of Ozz",
+        "tracks": [
+          {
+            "name": "I Don't Know"
+          }
+        ]
+      },
+      {
+        "title": "Blood Sugar Sex Magik",
+        "tracks": [
+          {
+            "name": "The Power Of Equality"
+          }
+        ]
+      },
+      {
+        "title": "Blue Moods",
+        "tracks": [
+          {
+            "name": "Colibri"
+          }
+        ]
+      },
+      {
+        "title": "Body Count",
+        "tracks": [
+          {
+            "name": "Smoked Pork"
+          }
+        ]
+      },
+      {
+        "title": "Bongo Fury",
+        "tracks": [
+          {
+            "name": "Debra Kadabra"
+          }
+        ]
+      },
+      {
+        "title": "Brave New World",
+        "tracks": [
+          {
+            "name": "The Wicker Man"
+          }
+        ]
+      },
+      {
+        "title": "B-Sides 1980-1990",
+        "tracks": [
+          {
+            "name": "The Three Sunrises"
+          }
+        ]
+      },
+      {
+        "title": "By The Way",
+        "tracks": [
+          {
+            "name": "By The Way"
+          }
+        ]
+      },
+      {
+        "title": "Cafezinho",
+        "tracks": [
+          {
+            "name": "Pura Elegancia"
+          }
+        ]
+      },
+      {
+        "title": "Cake: B-Sides and Rarities",
+        "tracks": [
+          {
+            "name": "War Pigs"
+          }
+        ]
+      },
+      {
+        "title": "Californication",
+        "tracks": [
+          {
+            "name": "Around The World"
+          }
+        ]
+      },
+      {
+        "title": "Carmina Burana",
+        "tracks": [
+          {
+            "name": "Carmina Burana: O Fortuna"
+          }
+        ]
+      },
+      {
+        "title": "Carnaval 2001",
+        "tracks": [
+          {
+            "name": "Vai-Vai 2001"
+          }
+        ]
+      },
+      {
+        "title": "Carried to Dust (Bonus Track Version)",
+        "tracks": [
+          {
+            "name": "Slowness"
+          }
+        ]
+      },
+      {
+        "title": "Carry On",
+        "tracks": [
+          {
+            "name": "No Such Thing"
+          }
+        ]
+      },
+      {
+        "title": "Cássia Eller - Coleção Sem Limite [Disc 2]",
+        "tracks": [
+          {
+            "name": "Gatas Extraordinárias"
+          }
+        ]
+      },
+      {
+        "title": "Cássia Eller - Sem Limite [Disc 1]",
+        "tracks": [
+          {
+            "name": "Malandragem"
+          }
+        ]
+      },
+      {
+        "title": "Cesta Básica",
+        "tracks": [
+          {
+            "name": "Infeliz Natal"
+          }
+        ]
+      },
+      {
+        "title": "Charpentier: Divertissements, Airs & Concerts",
+        "tracks": [
+          {
+            "name": "Concert pour 4 Parties de V**les, H. 545: I. Prelude"
+          }
+        ]
+      },
+      {
+        "title": "Chemical Wedding",
+        "tracks": [
+          {
+            "name": "King In Crimson"
+          }
+        ]
+      },
+      {
+        "title": "Chill: Brazil (Disc 1)",
+        "tracks": [
+          {
+            "name": "Guanabara"
+          }
+        ]
+      },
+      {
+        "title": "Chill: Brazil (Disc 2)",
+        "tracks": [
+          {
+            "name": "Garota De Ipanema"
+          }
+        ]
+      },
+      {
+        "title": "Chopin: Piano Concertos Nos. 1 & 2",
+        "tracks": [
+          {
+            "name": "Concerto for Piano No. 2 in F Minor, Op. 21: II. Larghetto"
+          }
+        ]
+      },
+      {
+        "title": "Chronicle, Vol. 1",
+        "tracks": [
+          {
+            "name": "Susie Q"
+          }
+        ]
+      },
+      {
+        "title": "Chronicle, Vol. 2",
+        "tracks": [
+          {
+            "name": "Walking On The Water"
+          }
+        ]
+      },
+      {
+        "title": "Cidade Negra - Hits",
+        "tracks": [
+          {
+            "name": "Onde Você Mora?"
+          }
+        ]
+      },
+      {
+        "title": "Coda",
+        "tracks": [
+          {
+            "name": "We're Gonna Groove"
+          }
+        ]
+      },
+      {
+        "title": "Come Taste The Band",
+        "tracks": [
+          {
+            "name": "Comin' Home"
+          }
+        ]
+      },
+      {
+        "title": "Compositores",
+        "tracks": [
+          {
+            "name": "Time"
+          }
+        ]
+      },
+      {
+        "title": "Contraband",
+        "tracks": [
+          {
+            "name": "Sucker Train Blues"
+          }
+        ]
+      },
+      {
+        "title": "Core",
+        "tracks": [
+          {
+            "name": "Dead And Bloated"
+          }
+        ]
+      },
+      {
+        "title": "Da Lama Ao Caos",
+        "tracks": [
+          {
+            "name": "Banditismo Por Uma Questa"
+          }
+        ]
+      },
+      {
+        "title": "Dance Of Death",
+        "tracks": [
+          {
+            "name": "Wildest Dreams"
+          }
+        ]
+      },
+      {
+        "title": "Dark Side Of The Moon",
+        "tracks": [
+          {
+            "name": "Speak To Me/Breathe"
+          }
+        ]
+      },
+      {
+        "title": "Deep Purple In Rock",
+        "tracks": [
+          {
+            "name": "Speed King"
+          }
+        ]
+      },
+      {
+        "title": "Deixa Entrar",
+        "tracks": [
+          {
+            "name": "Deixa Entrar"
+          }
+        ]
+      },
+      {
+        "title": "Demorou...",
+        "tracks": [
+          {
+            "name": "Kir Royal"
+          }
+        ]
+      },
+      {
+        "title": "Diary of a Madman (Remastered)",
+        "tracks": [
+          {
+            "name": "Flying High Again"
+          }
+        ]
+      },
+      {
+        "title": "Diver Down",
+        "tracks": [
+          {
+            "name": "Where Have All The Good Times Gone?"
+          }
+        ]
+      },
+      {
+        "title": "Djavan Ao Vivo - Vol. 02",
+        "tracks": [
+          {
+            "name": "Pétala"
+          }
+        ]
+      },
+      {
+        "title": "Djavan Ao Vivo - Vol. 1",
+        "tracks": [
+          {
+            "name": "Samurai"
+          }
+        ]
+      },
+      {
+        "title": "Duos II",
+        "tracks": [
+          {
+            "name": "Muita Bobeira"
+          }
+        ]
+      },
+      {
+        "title": "Elgar: Cello Concerto & Vaughan Williams: Fantasias",
+        "tracks": [
+          {
+            "name": "Concerto for Cello and Orchestra in E minor, Op. 85: I. Adagio - Moderato"
+          }
+        ]
+      },
+      {
+        "title": "Elis Regina-Minha História",
+        "tracks": [
+          {
+            "name": "O Bêbado e a Equilibrista"
+          }
+        ]
+      },
+      {
+        "title": "Emergency On Planet Earth",
+        "tracks": [
+          {
+            "name": "When You Gonna Learn (Digeridoo)"
+          }
+        ]
+      },
+      {
+        "title": "English Renaissance",
+        "tracks": [
+          {
+            "name": "Lamentations of Jeremiah, First Set \\ Incipit Lamentatio"
+          }
+        ]
+      },
+      {
+        "title": "Every Kind of Light",
+        "tracks": [
+          {
+            "name": "I Guess You're Right"
+          }
+        ]
+      },
+      {
+        "title": "Faceless",
+        "tracks": [
+          {
+            "name": "Straight Out Of Line"
+          }
+        ]
+      },
+      {
+        "title": "Facelift",
+        "tracks": [
+          {
+            "name": "We Die Young"
+          }
+        ]
+      },
+      {
+        "title": "Fauré: Requiem, Ravel: Pavane & Others",
+        "tracks": [
+          {
+            "name": "Requiem, Op.48: 4. Pie Jesu"
+          }
+        ]
+      },
+      {
+        "title": "Fear Of The Dark",
+        "tracks": [
+          {
+            "name": "Be Quick Or Be Dead"
+          }
+        ]
+      },
+      {
+        "title": "Fireball",
+        "tracks": [
+          {
+            "name": "Fireball"
+          }
+        ]
+      },
+      {
+        "title": "For Those About To Rock We Salute You",
+        "tracks": [
+          {
+            "name": "For Those About To Rock (We Salute You)"
+          }
+        ]
+      },
+      {
+        "title": "Frank",
+        "tracks": [
+          {
+            "name": "Intro / Stronger Than Me"
+          }
+        ]
+      },
+      {
+        "title": "From The Muddy Banks Of The Wishkah [Live]",
+        "tracks": [
+          {
+            "name": "Intro"
+          }
+        ]
+      },
+      {
+        "title": "Garage Inc. (Disc 1)",
+        "tracks": [
+          {
+            "name": "Free Speech For The Dumb"
+          }
+        ]
+      },
+      {
+        "title": "Garage Inc. (Disc 2)",
+        "tracks": [
+          {
+            "name": "Helpless"
+          }
+        ]
+      },
+      {
+        "title": "Get Born",
+        "tracks": [
+          {
+            "name": "Last Chance"
+          }
+        ]
+      },
+      {
+        "title": "Górecki: Symphony No. 3",
+        "tracks": [
+          {
+            "name": "Symphony No. 3 Op. 36 for Orchestra and Soprano \"Symfonia Piesni Zalosnych\" \\ Lento E Largo - Tranquillissimo"
+          }
+        ]
+      },
+      {
+        "title": "Greatest Hits",
+        "tracks": [
+          {
+            "name": "Are You Gonna Go My Way"
+          }
+        ]
+      },
+      {
+        "title": "Greatest Hits I",
+        "tracks": [
+          {
+            "name": "Bohemian Rhapsody"
+          }
+        ]
+      },
+      {
+        "title": "Greatest Hits II",
+        "tracks": [
+          {
+            "name": "A Kind Of Magic"
+          }
+        ]
+      },
+      {
+        "title": "Greatest Kiss",
+        "tracks": [
+          {
+            "name": "Detroit Rock City"
+          }
+        ]
+      },
+      {
+        "title": "Great Opera Choruses",
+        "tracks": [
+          {
+            "name": "Nabucco: Chorus, \"Va, Pensiero, Sull'ali Dorate\""
+          }
+        ]
+      },
+      {
+        "title": "Great Performances - Barber's Adagio and Other Romantic Favorites for Strings",
+        "tracks": [
+          {
+            "name": "Adagio for Strings from the String Quartet, Op. 11"
+          }
+        ]
+      },
+      {
+        "title": "Great Recordings of the Century - Mahler: Das Lied von der Erde",
+        "tracks": [
+          {
+            "name": "Das Lied Von Der Erde, Von Der Jugend"
+          }
+        ]
+      },
+      {
+        "title": "Great Recordings of the Century: Paganini's 24 Caprices",
+        "tracks": [
+          {
+            "name": "24 Caprices, Op. 1, No. 24, for Solo Violin, in A Minor"
+          }
+        ]
+      },
+      {
+        "title": "Great Recordings of the Century - Shubert: Schwanengesang, 4 Lieder",
+        "tracks": [
+          {
+            "name": "Erlkonig, D.328"
+          }
+        ]
+      },
+      {
+        "title": "Green",
+        "tracks": [
+          {
+            "name": "Pop Song 89"
+          }
+        ]
+      },
+      {
+        "title": "Grieg: Peer Gynt Suites & Sibelius: Pelléas et Mélisande",
+        "tracks": [
+          {
+            "name": "Peer Gynt Suite No.1, Op.46: 1. Morning Mood"
+          }
+        ]
+      },
+      {
+        "title": "Handel: Music for the Royal Fireworks (Original Version 1749)",
+        "tracks": [
+          {
+            "name": "Music for the Royal Fireworks, HWV351 (1749): La Réjouissance"
+          }
+        ]
+      },
+      {
+        "title": "Handel: The Messiah (Highlights)",
+        "tracks": [
+          {
+            "name": "The Messiah: Behold, I Tell You a Mystery... The Trumpet Shall Sound"
+          }
+        ]
+      },
+      {
+        "title": "Haydn: Symphonies 99 - 104",
+        "tracks": [
+          {
+            "name": "Symphony No. 104 in D Major \"London\": IV. Finale: Spiritoso"
+          }
+        ]
+      },
+      {
+        "title": "Heart of the Night",
+        "tracks": [
+          {
+            "name": "Heart of the Night"
+          }
+        ]
+      },
+      {
+        "title": "Heroes, Season 1",
+        "tracks": [
+          {
+            "name": "Genesis"
+          }
+        ]
+      },
+      {
+        "title": "Holst: The Planets, Op. 32 & Vaughan Williams: Fantasies",
+        "tracks": [
+          {
+            "name": "Jupiter, the Bringer of Jollity"
+          }
+        ]
+      },
+      {
+        "title": "Hot Rocks, 1964-1971 (Disc 1)",
+        "tracks": [
+          {
+            "name": "Time Is On My Side"
+          }
+        ]
+      },
+      {
+        "title": "House of Pain",
+        "tracks": [
+          {
+            "name": "Jump Around"
+          }
+        ]
+      },
+      {
+        "title": "Houses Of The Holy",
+        "tracks": [
+          {
+            "name": "The Song Remains The Same"
+          }
+        ]
+      },
+      {
+        "title": "How To Dismantle An Atomic Bomb",
+        "tracks": [
+          {
+            "name": "Vertigo"
+          }
+        ]
+      },
+      {
+        "title": "Instant Karma: The Amnesty International Campaign to Save Darfur",
+        "tracks": [
+          {
+            "name": "Instant Karma"
+          }
+        ]
+      },
+      {
+        "title": "In Step",
+        "tracks": [
+          {
+            "name": "The House Is Rockin'"
+          }
+        ]
+      },
+      {
+        "title": "International Superhits",
+        "tracks": [
+          {
+            "name": "Maria"
+          }
+        ]
+      },
+      {
+        "title": "In Through The Out Door",
+        "tracks": [
+          {
+            "name": "In The Evening"
+          }
+        ]
+      },
+      {
+        "title": "Into The Light",
+        "tracks": [
+          {
+            "name": "Into The Light"
+          }
+        ]
+      },
+      {
+        "title": "In Your Honor [Disc 1]",
+        "tracks": [
+          {
+            "name": "In Your Honor"
+          }
+        ]
+      },
+      {
+        "title": "In Your Honor [Disc 2]",
+        "tracks": [
+          {
+            "name": "Still"
+          }
+        ]
+      },
+      {
+        "title": "Iron Maiden",
+        "tracks": [
+          {
+            "name": "01 - Prowler"
+          }
+        ]
+      },
+      {
+        "title": "IV",
+        "tracks": [
+          {
+            "name": "Black Dog"
+          }
+        ]
+      },
+      {
+        "title": "Jagged Little Pill",
+        "tracks": [
+          {
+            "name": "All I Really Want"
+          }
+        ]
+      },
+      {
+        "title": "Jorge Ben Jor 25 Anos",
+        "tracks": [
+          {
+            "name": "Engenho De Dentro"
+          }
+        ]
+      },
+      {
+        "title": "Jota Quest-1995",
+        "tracks": [
+          {
+            "name": "Rapidamente"
+          }
+        ]
+      },
+      {
+        "title": "J.S. Bach: Chaconne, Suite in E Minor, Partita in E Major & Prelude, Fugue and Allegro",
+        "tracks": [
+          {
+            "name": "Partita in E Major, BWV 1006A: I. Prelude"
+          }
+        ]
+      },
+      {
+        "title": "Judas 0: B-Sides and Rarities",
+        "tracks": [
+          {
+            "name": "Lucky 13"
+          }
+        ]
+      },
+      {
+        "title": "Kill 'Em All",
+        "tracks": [
+          {
+            "name": "Hit The Lights"
+          }
+        ]
+      },
+      {
+        "title": "Killers",
+        "tracks": [
+          {
+            "name": "The Ides Of March"
+          }
+        ]
+      },
+      {
+        "title": "King For A Day Fool For A Lifetime",
+        "tracks": [
+          {
+            "name": "Get Out"
+          }
+        ]
+      },
+      {
+        "title": "Knocking at Your Back Door: The Best Of Deep Purple in the 80's",
+        "tracks": [
+          {
+            "name": "Knocking At Your Back Door"
+          }
+        ]
+      },
+      {
+        "title": "Koyaanisqatsi (Soundtrack from the Motion Picture)",
+        "tracks": [
+          {
+            "name": "Koyaanisqatsi"
+          }
+        ]
+      },
+      {
+        "title": "Led Zeppelin I",
+        "tracks": [
+          {
+            "name": "Good Times Bad Times"
+          }
+        ]
+      },
+      {
+        "title": "Led Zeppelin II",
+        "tracks": [
+          {
+            "name": "Whole Lotta Love"
+          }
+        ]
+      },
+      {
+        "title": "Led Zeppelin III",
+        "tracks": [
+          {
+            "name": "Immigrant Song"
+          }
+        ]
+      },
+      {
+        "title": "Let There Be Rock",
+        "tracks": [
+          {
+            "name": "Go Down"
+          }
+        ]
+      },
+      {
+        "title": "Liszt - 12 Études D'Execution Transcendante",
+        "tracks": [
+          {
+            "name": "Étude 1, In C Major - Preludio (Presto) - Liszt"
+          }
+        ]
+      },
+      {
+        "title": "Live After Death",
+        "tracks": [
+          {
+            "name": "Intro- Churchill S Speech"
+          }
+        ]
+      },
+      {
+        "title": "Live At Donington 1992 (Disc 1)",
+        "tracks": [
+          {
+            "name": "Be Quick Or Be Dead"
+          }
+        ]
+      },
+      {
+        "title": "Live At Donington 1992 (Disc 2)",
+        "tracks": [
+          {
+            "name": "Bring Your Daughter... To The Slaughter..."
+          }
+        ]
+      },
+      {
+        "title": "Live [Disc 1]",
+        "tracks": [
+          {
+            "name": "Midnight From The Inside Out"
+          }
+        ]
+      },
+      {
+        "title": "Live [Disc 2]",
+        "tracks": [
+          {
+            "name": "Black Moon Creeping"
+          }
+        ]
+      },
+      {
+        "title": "Live On Two Legs [Live]",
+        "tracks": [
+          {
+            "name": "Corduroy"
+          }
+        ]
+      },
+      {
+        "title": "Living After Midnight",
+        "tracks": [
+          {
+            "name": "The Green Manalishi"
+          }
+        ]
+      },
+      {
+        "title": "Load",
+        "tracks": [
+          {
+            "name": "Ain't My Bitch"
+          }
+        ]
+      },
+      {
+        "title": "Locatelli: Concertos for Violin, Strings and Continuo, Vol. 3",
+        "tracks": [
+          {
+            "name": "Concerto for Violin, Strings and Continuo in G Major, Op. 3, No. 9: I. Allegro"
+          }
+        ]
+      },
+      {
+        "title": "Lost, Season 1",
+        "tracks": [
+          {
+            "name": "Lost (Pilot, Part 1) [Premiere]"
+          }
+        ]
+      },
+      {
+        "title": "Lost, Season 2",
+        "tracks": [
+          {
+            "name": "Man of Science, Man of Faith (Premiere)"
+          }
+        ]
+      },
+      {
+        "title": "Lost, Season 3",
+        "tracks": [
+          {
+            "name": "A Tale of Two Cities"
+          }
+        ]
+      },
+      {
+        "title": "LOST, Season 4",
+        "tracks": [
+          {
+            "name": "Past, Present, and Future"
+          }
+        ]
+      },
+      {
+        "title": "Lulu Santos - RCA 100 Anos De Música - Álbum 01",
+        "tracks": [
+          {
+            "name": "Assim Caminha A Humanidade"
+          }
+        ]
+      },
+      {
+        "title": "Lulu Santos - RCA 100 Anos De Música - Álbum 02",
+        "tracks": [
+          {
+            "name": "Honolulu"
+          }
+        ]
+      },
+      {
+        "title": "Machine Head",
+        "tracks": [
+          {
+            "name": "Highway Star"
+          }
+        ]
+      },
+      {
+        "title": "Mais Do Mesmo",
+        "tracks": [
+          {
+            "name": "Será"
+          }
+        ]
+      },
+      {
+        "title": "Maquinarama",
+        "tracks": [
+          {
+            "name": "Água E Fogo"
+          }
+        ]
+      },
+      {
+        "title": "Mascagni: Cavalleria Rusticana",
+        "tracks": [
+          {
+            "name": "Cavalleria Rusticana \\ Act \\ Intermezzo Sinfonico"
+          }
+        ]
+      },
+      {
+        "title": "Master Of Puppets",
+        "tracks": [
+          {
+            "name": "Battery"
+          }
+        ]
+      },
+      {
+        "title": "Mendelssohn: A Midsummer Night's Dream",
+        "tracks": [
+          {
+            "name": "A Midsummer Night's Dream, Op.61 Incidental Music: No.7 Notturno"
+          }
+        ]
+      },
+      {
+        "title": "Meus Momentos",
+        "tracks": [
+          {
+            "name": "Grito De Alerta"
+          }
+        ]
+      },
+      {
+        "title": "Mezmerize",
+        "tracks": [
+          {
+            "name": "Soldier Side - Intro"
+          }
+        ]
+      },
+      {
+        "title": "Miles Ahead",
+        "tracks": [
+          {
+            "name": "Springsville"
+          }
+        ]
+      },
+      {
+        "title": "Milton Nascimento Ao Vivo",
+        "tracks": [
+          {
+            "name": "Coração De Estudante"
+          }
+        ]
+      },
+      {
+        "title": "Minas",
+        "tracks": [
+          {
+            "name": "Minas"
+          }
+        ]
+      },
+      {
+        "title": "Minha Historia",
+        "tracks": [
+          {
+            "name": "Carolina"
+          }
+        ]
+      },
+      {
+        "title": "Minha História",
+        "tracks": [
+          {
+            "name": "Balada Do Louco"
+          }
+        ]
+      },
+      {
+        "title": "Misplaced Childhood",
+        "tracks": [
+          {
+            "name": "Pseudo Silk Kimono"
+          }
+        ]
+      },
+      {
+        "title": "MK III The Final Concerts [Disc 1]",
+        "tracks": [
+          {
+            "name": "Burn"
+          }
+        ]
+      },
+      {
+        "title": "Monteverdi: L'Orfeo",
+        "tracks": [
+          {
+            "name": "L'orfeo, Act 3, Sinfonia (Orchestra)"
+          }
+        ]
+      },
+      {
+        "title": "Morning Dance",
+        "tracks": [
+          {
+            "name": "Morning Dance"
+          }
+        ]
+      },
+      {
+        "title": "Motley Crue Greatest Hits",
+        "tracks": [
+          {
+            "name": "Bitter Pill"
+          }
+        ]
+      },
+      {
+        "title": "Mozart: Chamber Music",
+        "tracks": [
+          {
+            "name": "Quintet for Horn, Violin, 2 Violas, and Cello in E Flat Major, K. 407/386c: III. Allegro"
+          }
+        ]
+      },
+      {
+        "title": "Mozart Gala: Famous Arias",
+        "tracks": [
+          {
+            "name": "Die Zauberflöte, K.620: \"Der Hölle Rache Kocht in Meinem Herze\""
+          }
+        ]
+      },
+      {
+        "title": "Mozart: Symphonies Nos. 40 & 41",
+        "tracks": [
+          {
+            "name": "Symphony No. 41 in C Major, K. 551, \"Jupiter\": IV. Molto allegro"
+          }
+        ]
+      },
+      {
+        "title": "Mozart: Wind Concertos",
+        "tracks": [
+          {
+            "name": "Concerto for Clarinet in A Major, K. 622: II. Adagio"
+          }
+        ]
+      },
+      {
+        "title": "Muso Ko",
+        "tracks": [
+          {
+            "name": "Din Din Wo (Little Child)"
+          }
+        ]
+      },
+      {
+        "title": "My Generation - The Very Best Of The Who",
+        "tracks": [
+          {
+            "name": "I Can't Explain"
+          }
+        ]
+      },
+      {
+        "title": "My Way: The Best Of Frank Sinatra [Disc 1]",
+        "tracks": [
+          {
+            "name": "My Way"
+          }
+        ]
+      },
+      {
+        "title": "Na Pista",
+        "tracks": [
+          {
+            "name": "Noite Do Prazer"
+          }
+        ]
+      },
+      {
+        "title": "Nevermind",
+        "tracks": [
+          {
+            "name": "Smells Like Teen Spirit"
+          }
+        ]
+      },
+      {
+        "title": "New Adventures In Hi-Fi",
+        "tracks": [
+          {
+            "name": "How The West Was Won And Where It Got Us"
+          }
+        ]
+      },
+      {
+        "title": "News Of The World",
+        "tracks": [
+          {
+            "name": "We Will Rock You"
+          }
+        ]
+      },
+      {
+        "title": "Nielsen: The Six Symphonies",
+        "tracks": [
+          {
+            "name": "Symphony No. 2, Op. 16 -  \"The Four Temperaments\": II. Allegro Comodo e Flemmatico"
+          }
+        ]
+      },
+      {
+        "title": "No More Tears (Remastered)",
+        "tracks": [
+          {
+            "name": "Mama, I'm Coming Home"
+          }
+        ]
+      },
+      {
+        "title": "No Prayer For The Dying",
+        "tracks": [
+          {
+            "name": "Tailgunner"
+          }
+        ]
+      },
+      {
+        "title": "No Security",
+        "tracks": [
+          {
+            "name": "Intro"
+          }
+        ]
+      },
+      {
+        "title": "Olodum",
+        "tracks": [
+          {
+            "name": "Requebra"
+          }
+        ]
+      },
+      {
+        "title": "One By One",
+        "tracks": [
+          {
+            "name": "All My Life"
+          }
+        ]
+      },
+      {
+        "title": "Original Soundtracks 1",
+        "tracks": [
+          {
+            "name": "United Colours"
+          }
+        ]
+      },
+      {
+        "title": "O Samba Poconé",
+        "tracks": [
+          {
+            "name": "É Uma Partida De Futebol"
+          }
+        ]
+      },
+      {
+        "title": "Os Cães Ladram Mas A Caravana Não Pára",
+        "tracks": [
+          {
+            "name": "ZeroVinteUm"
+          }
+        ]
+      },
+      {
+        "title": "Outbreak",
+        "tracks": [
+          {
+            "name": "Roll Call"
+          }
+        ]
+      },
+      {
+        "title": "Out Of Exile",
+        "tracks": [
+          {
+            "name": "Your Time Has Come"
+          }
+        ]
+      },
+      {
+        "title": "Out Of Time",
+        "tracks": [
+          {
+            "name": "Shiny Happy People"
+          }
+        ]
+      },
+      {
+        "title": "Pachelbel: Canon & Gigue",
+        "tracks": [
+          {
+            "name": "Canon and Gigue in D Major: I. Canon"
+          }
+        ]
+      },
+      {
+        "title": "Palestrina: Missa Papae Marcelli & Allegri: Miserere",
+        "tracks": [
+          {
+            "name": "Missa Papae Marcelli: Kyrie"
+          }
+        ]
+      },
+      {
+        "title": "Pavarotti's Opera Made Easy",
+        "tracks": [
+          {
+            "name": "Turandot, Act III, Nessun dorma!"
+          }
+        ]
+      },
+      {
+        "title": "Pearl Jam",
+        "tracks": [
+          {
+            "name": "Life Wasted"
+          }
+        ]
+      },
+      {
+        "title": "Physical Graffiti [Disc 1]",
+        "tracks": [
+          {
+            "name": "Custard Pie"
+          }
+        ]
+      },
+      {
+        "title": "Physical Graffiti [Disc 2]",
+        "tracks": [
+          {
+            "name": "In The Light"
+          }
+        ]
+      },
+      {
+        "title": "Piece Of Mind",
+        "tracks": [
+          {
+            "name": "Where Eagles Dare"
+          }
+        ]
+      },
+      {
+        "title": "Plays Metallica By Four Cellos",
+        "tracks": [
+          {
+            "name": "Enter Sandman"
+          }
+        ]
+      },
+      {
+        "title": "Pop",
+        "tracks": [
+          {
+            "name": "Discotheque"
+          }
+        ]
+      },
+      {
+        "title": "Powerslave",
+        "tracks": [
+          {
+            "name": "Aces High"
+          }
+        ]
+      },
+      {
+        "title": "Prenda Minha",
+        "tracks": [
+          {
+            "name": "Jorge Da Capadócia"
+          }
+        ]
+      },
+      {
+        "title": "Presence",
+        "tracks": [
+          {
+            "name": "Achilles Last Stand"
+          }
+        ]
+      },
+      {
+        "title": "Prokofiev: Romeo & Juliet",
+        "tracks": [
+          {
+            "name": "Romeo et Juliette: No. 11 - Danse des Chevaliers"
+          }
+        ]
+      },
+      {
+        "title": "Prokofiev: Symphony No.1",
+        "tracks": [
+          {
+            "name": "Symphony No.1 in D Major, Op.25 \"Classical\", Allegro Con Brio"
+          }
+        ]
+      },
+      {
+        "title": "Prokofiev: Symphony No.5 & Stravinksy: Le Sacre Du Printemps",
+        "tracks": [
+          {
+            "name": "Le Sacre Du Printemps: I.iv. Spring Rounds"
+          }
+        ]
+      },
+      {
+        "title": "Puccini: Madama Butterfly - Highlights",
+        "tracks": [
+          {
+            "name": "Madama Butterfly: Un Bel Dì Vedremo"
+          }
+        ]
+      },
+      {
+        "title": "Purcell: Music for the Queen Mary",
+        "tracks": [
+          {
+            "name": "Music for the Funeral of Queen Mary: VI. \"Thou Knowest, Lord, the Secrets of Our Hearts\""
+          }
+        ]
+      },
+      {
+        "title": "Purcell: The Fairy Queen",
+        "tracks": [
+          {
+            "name": "Act IV, Symphony"
+          }
+        ]
+      },
+      {
+        "title": "Pure Cult: The Best Of The Cult (For Rockers, Ravers, Lovers & Sinners) [UK]",
+        "tracks": [
+          {
+            "name": "She Sells Sanctuary"
+          }
+        ]
+      },
+      {
+        "title": "Purpendicular",
+        "tracks": [
+          {
+            "name": "Vavoom : Ted The Mechanic"
+          }
+        ]
+      },
+      {
+        "title": "Quanta Gente Veio ver--Bônus De Carnaval",
+        "tracks": [
+          {
+            "name": "Doce De Carnaval (Candy All)"
+          }
+        ]
+      },
+      {
+        "title": "Quanta Gente Veio Ver (Live)",
+        "tracks": [
+          {
+            "name": "Introdução (Live)"
+          }
+        ]
+      },
+      {
+        "title": "Quiet Songs",
+        "tracks": [
+          {
+            "name": "Amanda"
+          }
+        ]
+      },
+      {
+        "title": "Radio Brasil (O Som da Jovem Vanguarda) - Seleccao de Henrique Amaro",
+        "tracks": [
+          {
+            "name": "Instinto Colectivo"
+          }
+        ]
+      },
+      {
+        "title": "Rattle And Hum",
+        "tracks": [
+          {
+            "name": "Helter Skelter"
+          }
+        ]
+      },
+      {
+        "title": "Raul Seixas",
+        "tracks": [
+          {
+            "name": "Maluco Beleza"
+          }
+        ]
+      },
+      {
+        "title": "Realize",
+        "tracks": [
+          {
+            "name": "Distance"
+          }
+        ]
+      },
+      {
+        "title": "ReLoad",
+        "tracks": [
+          {
+            "name": "Fuel"
+          }
+        ]
+      },
+      {
+        "title": "Respighi:Pines of Rome",
+        "tracks": [
+          {
+            "name": "Pini Di Roma (Pinien Von Rom) \\ I Pini Della Via Appia"
+          }
+        ]
+      },
+      {
+        "title": "Restless and Wild",
+        "tracks": [
+          {
+            "name": "Fast As a Shark"
+          }
+        ]
+      },
+      {
+        "title": "Retrospective I (1974-1980)",
+        "tracks": [
+          {
+            "name": "The Spirit Of Radio"
+          }
+        ]
+      },
+      {
+        "title": "Revelations",
+        "tracks": [
+          {
+            "name": "Revelations"
+          }
+        ]
+      },
+      {
+        "title": "Ride The Lightning",
+        "tracks": [
+          {
+            "name": "Fight Fire With Fire"
+          }
+        ]
+      },
+      {
+        "title": "Riot Act",
+        "tracks": [
+          {
+            "name": "Can't Keep"
+          }
+        ]
+      },
+      {
+        "title": "Rock In Rio [CD1]",
+        "tracks": [
+          {
+            "name": "Intro"
+          }
+        ]
+      },
+      {
+        "title": "Rock In Rio [CD2]",
+        "tracks": [
+          {
+            "name": "Dream Of Mirrors"
+          }
+        ]
+      },
+      {
+        "title": "Roda De Funk",
+        "tracks": [
+          {
+            "name": "Entrando Na Sua (Intro)"
+          }
+        ]
+      },
+      {
+        "title": "Rotten Apples: Greatest Hits",
+        "tracks": [
+          {
+            "name": "Siva"
+          }
+        ]
+      },
+      {
+        "title": "Sambas De Enredo 2001",
+        "tracks": [
+          {
+            "name": "Imperatriz"
+          }
+        ]
+      },
+      {
+        "title": "Santana - As Years Go By",
+        "tracks": [
+          {
+            "name": "Jingo"
+          }
+        ]
+      },
+      {
+        "title": "Santana Live",
+        "tracks": [
+          {
+            "name": "Evil Ways"
+          }
+        ]
+      },
+      {
+        "title": "Scheherazade",
+        "tracks": [
+          {
+            "name": "Scheherazade, Op. 35: I. The Sea and Sindbad's Ship"
+          }
+        ]
+      },
+      {
+        "title": "Schubert: The Late String Quartets & String Quintet (3 CD's)",
+        "tracks": [
+          {
+            "name": "String Quartet No. 12 in C Minor, D. 703 \"Quartettsatz\": II. Andante - Allegro assai"
+          }
+        ]
+      },
+      {
+        "title": "SCRIABIN: Vers la flamme",
+        "tracks": [
+          {
+            "name": "SCRIABIN: Prelude in B Major, Op. 11, No. 11"
+          }
+        ]
+      },
+      {
+        "title": "Seek And Shall Find: More Of The Best (1963-1981)",
+        "tracks": [
+          {
+            "name": "Wherever I Lay My Hat"
+          }
+        ]
+      },
+      {
+        "title": "Serie Sem Limite (Disc 1)",
+        "tracks": [
+          {
+            "name": "Primavera"
+          }
+        ]
+      },
+      {
+        "title": "Serie Sem Limite (Disc 2)",
+        "tracks": [
+          {
+            "name": "O Que Me Importa"
+          }
+        ]
+      },
+      {
+        "title": "Seventh Son of a Seventh Son",
+        "tracks": [
+          {
+            "name": "Moonchild"
+          }
+        ]
+      },
+      {
+        "title": "Sex Machine",
+        "tracks": [
+          {
+            "name": "Please Please Please"
+          }
+        ]
+      },
+      {
+        "title": "Sibelius: Finlandia",
+        "tracks": [
+          {
+            "name": "Karelia Suite, Op.11: 2. Ballade (Tempo Di Menuetto)"
+          }
+        ]
+      },
+      {
+        "title": "Sir Neville Marriner: A Celebration",
+        "tracks": [
+          {
+            "name": "\"Eine Kleine Nachtmusik\" Serenade In G, K. 525: I. Allegro"
+          }
+        ]
+      },
+      {
+        "title": "Slaves And Masters",
+        "tracks": [
+          {
+            "name": "King Of Dreams"
+          }
+        ]
+      },
+      {
+        "title": "Somewhere in Time",
+        "tracks": [
+          {
+            "name": "Caught Somewhere in Time"
+          }
+        ]
+      },
+      {
+        "title": "South American Getaway",
+        "tracks": [
+          {
+            "name": "Adios nonino"
+          }
+        ]
+      },
+      {
+        "title": "Sozinho Remix Ao Vivo",
+        "tracks": [
+          {
+            "name": "Sozinho (Hitmakers Classic Mix)"
+          }
+        ]
+      },
+      {
+        "title": "Speak of the Devil",
+        "tracks": [
+          {
+            "name": "Sympton of the Universe"
+          }
+        ]
+      },
+      {
+        "title": "St. Anger",
+        "tracks": [
+          {
+            "name": "Frantic"
+          }
+        ]
+      },
+      {
+        "title": "Stormbringer",
+        "tracks": [
+          {
+            "name": "Stormbringer"
+          }
+        ]
+      },
+      {
+        "title": "Strauss: Waltzes",
+        "tracks": [
+          {
+            "name": "On the Beautiful Blue Danube"
+          }
+        ]
+      },
+      {
+        "title": "Supernatural",
+        "tracks": [
+          {
+            "name": "(Da Le) Yaleo"
+          }
+        ]
+      },
+      {
+        "title": "Surfing with the Alien (Remastered)",
+        "tracks": [
+          {
+            "name": "Surfing with the Alien"
+          }
+        ]
+      },
+      {
+        "title": "Synkronized",
+        "tracks": [
+          {
+            "name": "Canned Heat"
+          }
+        ]
+      },
+      {
+        "title": "Szymanowski: Piano Works, Vol. 1",
+        "tracks": [
+          {
+            "name": "Metopes, Op. 29: Calypso"
+          }
+        ]
+      },
+      {
+        "title": "Tangents",
+        "tracks": [
+          {
+            "name": "Walking Wounded"
+          }
+        ]
+      },
+      {
+        "title": "Tchaikovsky: 1812 Festival Overture, Op.49, Capriccio Italien & Beethoven: Wellington's Victory",
+        "tracks": [
+          {
+            "name": "Wellington's Victory or the Battle Symphony, Op.91: 2. Symphony of Triumph"
+          }
+        ]
+      },
+      {
+        "title": "Tchaikovsky: The Nutcracker",
+        "tracks": [
+          {
+            "name": "The Nutcracker, Op. 71a, Act II: Scene 14: Pas de deux: Dance of the Prince & the Sugar-Plum Fairy"
+          }
+        ]
+      },
+      {
+        "title": "Temple of the Dog",
+        "tracks": [
+          {
+            "name": "Say Hello 2 Heaven"
+          }
+        ]
+      },
+      {
+        "title": "Ten",
+        "tracks": [
+          {
+            "name": "Once"
+          }
+        ]
+      },
+      {
+        "title": "The Battle Rages On",
+        "tracks": [
+          {
+            "name": "The Battle Rages On"
+          }
+        ]
+      },
+      {
+        "title": "The Beast Live",
+        "tracks": [
+          {
+            "name": "Wrathchild"
+          }
+        ]
+      },
+      {
+        "title": "The Best Of 1980-1990",
+        "tracks": [
+          {
+            "name": "Pride (In The Name Of Love)"
+          }
+        ]
+      },
+      {
+        "title": "The Best of Beethoven",
+        "tracks": [
+          {
+            "name": "Symphony No. 3 in E-flat major, Op. 55, \"Eroica\" - Scherzo: Allegro Vivace"
+          }
+        ]
+      },
+      {
+        "title": "The Best Of Billy Cobham",
+        "tracks": [
+          {
+            "name": "Quadrant"
+          }
+        ]
+      },
+      {
+        "title": "The Best Of Buddy Guy - The Millenium Collection",
+        "tracks": [
+          {
+            "name": "First Time I Met The Blues"
+          }
+        ]
+      },
+      {
+        "title": "The Best of Ed Motta",
+        "tracks": [
+          {
+            "name": "Solução"
+          }
+        ]
+      },
+      {
+        "title": "The Best Of Men At Work",
+        "tracks": [
+          {
+            "name": "Down Under"
+          }
+        ]
+      },
+      {
+        "title": "The Best Of R.E.M.: The IRS Years",
+        "tracks": [
+          {
+            "name": "Carnival Of Sorts"
+          }
+        ]
+      },
+      {
+        "title": "The Best Of Van Halen, Vol. I",
+        "tracks": [
+          {
+            "name": "Eruption"
+          }
+        ]
+      },
+      {
+        "title": "The Colour And The Shape",
+        "tracks": [
+          {
+            "name": "Doll"
+          }
+        ]
+      },
+      {
+        "title": "The Cream Of Clapton",
+        "tracks": [
+          {
+            "name": "Layla"
+          }
+        ]
+      },
+      {
+        "title": "The Doors",
+        "tracks": [
+          {
+            "name": "Break on Through"
+          }
+        ]
+      },
+      {
+        "title": "The Essential Miles Davis [Disc 1]",
+        "tracks": [
+          {
+            "name": "Now's The Time"
+          }
+        ]
+      },
+      {
+        "title": "The Essential Miles Davis [Disc 2]",
+        "tracks": [
+          {
+            "name": "My Funny Valentine (Live)"
+          }
+        ]
+      },
+      {
+        "title": "The Final Concerts (Disc 2)",
+        "tracks": [
+          {
+            "name": "Space Truckin'"
+          }
+        ]
+      },
+      {
+        "title": "The Last Night of the Proms",
+        "tracks": [
+          {
+            "name": "Nimrod (Adagio) from Variations On an Original Theme, Op. 36 \"Enigma\""
+          }
+        ]
+      },
+      {
+        "title": "The Number of The Beast",
+        "tracks": [
+          {
+            "name": "22 Acacia Avenue"
+          }
+        ]
+      },
+      {
+        "title": "The Office, Season 1",
+        "tracks": [
+          {
+            "name": "The Office: An American Workplace (Pilot)"
+          }
+        ]
+      },
+      {
+        "title": "The Office, Season 2",
+        "tracks": [
+          {
+            "name": "The Dundies"
+          }
+        ]
+      },
+      {
+        "title": "The Office, Season 3",
+        "tracks": [
+          {
+            "name": "Gay Witch Hunt"
+          }
+        ]
+      },
+      {
+        "title": "The Police Greatest Hits",
+        "tracks": [
+          {
+            "name": "Roxanne"
+          }
+        ]
+      },
+      {
+        "title": "The Real Thing",
+        "tracks": [
+          {
+            "name": "From Out Of Nowhere"
+          }
+        ]
+      },
+      {
+        "title": "The Return Of The Space Cowboy",
+        "tracks": [
+          {
+            "name": "Just Another Story"
+          }
+        ]
+      },
+      {
+        "title": "The Singles",
+        "tracks": [
+          {
+            "name": "White Riot"
+          }
+        ]
+      },
+      {
+        "title": "The Song Remains The Same (Disc 1)",
+        "tracks": [
+          {
+            "name": "Rock & Roll"
+          }
+        ]
+      },
+      {
+        "title": "The Song Remains The Same (Disc 2)",
+        "tracks": [
+          {
+            "name": "No Quarter"
+          }
+        ]
+      },
+      {
+        "title": "The Ultimate Relexation Album",
+        "tracks": [
+          {
+            "name": "3 Gymnopédies: No.1 - Lent Et Grave, No.3 - Lent Et Douloureux"
+          }
+        ]
+      },
+      {
+        "title": "The World of Classical Favourites",
+        "tracks": [
+          {
+            "name": "Solomon HWV 67: The Arrival of the Queen of Sheba"
+          }
+        ]
+      },
+      {
+        "title": "The X Factor",
+        "tracks": [
+          {
+            "name": "Sign Of The Cross"
+          }
+        ]
+      },
+      {
+        "title": "Transmission",
+        "tracks": [
+          {
+            "name": "Temptation"
+          }
+        ]
+      },
+      {
+        "title": "Tribute",
+        "tracks": [
+          {
+            "name": "I Don't Know"
+          }
+        ]
+      },
+      {
+        "title": "UB40 The Best Of - Volume Two [UK]",
+        "tracks": [
+          {
+            "name": "Breakfast In Bed"
+          }
+        ]
+      },
+      {
+        "title": "Un-Led-Ed",
+        "tracks": [
+          {
+            "name": "Your Time Is Gonna Come"
+          }
+        ]
+      },
+      {
+        "title": "Unplugged",
+        "tracks": [
+          {
+            "name": "Signe"
+          }
+        ]
+      },
+      {
+        "title": "Unplugged [Live]",
+        "tracks": [
+          {
+            "name": "Comin' Home"
+          }
+        ]
+      },
+      {
+        "title": "Up An' Atom",
+        "tracks": [
+          {
+            "name": "Jeepers Creepers"
+          }
+        ]
+      },
+      {
+        "title": "Use Your Illusion I",
+        "tracks": [
+          {
+            "name": "Right Next Door to Hell"
+          }
+        ]
+      },
+      {
+        "title": "Use Your Illusion II",
+        "tracks": [
+          {
+            "name": "Civil War"
+          }
+        ]
+      },
+      {
+        "title": "Van Halen",
+        "tracks": [
+          {
+            "name": "Runnin' With The Devil"
+          }
+        ]
+      },
+      {
+        "title": "Van Halen III",
+        "tracks": [
+          {
+            "name": "Neworld"
+          }
+        ]
+      },
+      {
+        "title": "Vault: Def Leppard's Greatest Hits",
+        "tracks": [
+          {
+            "name": "Pour Some Sugar On Me"
+          }
+        ]
+      },
+      {
+        "title": "Vinicius De Moraes",
+        "tracks": [
+          {
+            "name": "Pela Luz Dos Olhos Teus"
+          }
+        ]
+      },
+      {
+        "title": "Vinícius De Moraes - Sem Limite",
+        "tracks": [
+          {
+            "name": "Samba Da Bênção"
+          }
+        ]
+      },
+      {
+        "title": "Virtual XI",
+        "tracks": [
+          {
+            "name": "Futureal"
+          }
+        ]
+      },
+      {
+        "title": "Vivaldi: The Four Seasons",
+        "tracks": [
+          {
+            "name": "Concerto No. 1 in E Major, RV 269 \"Spring\": I. Allegro"
+          }
+        ]
+      },
+      {
+        "title": "Volume Dois",
+        "tracks": [
+          {
+            "name": "Sonifera Ilha"
+          }
+        ]
+      },
+      {
+        "title": "Voodoo Lounge",
+        "tracks": [
+          {
+            "name": "Love Is Strong"
+          }
+        ]
+      },
+      {
+        "title": "Vozes do MPB",
+        "tracks": [
+          {
+            "name": "Linha de Passe (João Bosco)"
+          }
+        ]
+      },
+      {
+        "title": "Vs.",
+        "tracks": [
+          {
+            "name": "Go"
+          }
+        ]
+      },
+      {
+        "title": "Wagner: Favourite Overtures",
+        "tracks": [
+          {
+            "name": "Die Walküre: The Ride of the Valkyries"
+          }
+        ]
+      },
+      {
+        "title": "Walking Into Clarksdale",
+        "tracks": [
+          {
+            "name": "Shining In The Light"
+          }
+        ]
+      },
+      {
+        "title": "War",
+        "tracks": [
+          {
+            "name": "Sunday Bloody Sunday"
+          }
+        ]
+      },
+      {
+        "title": "Warner 25 Anos",
+        "tracks": [
+          {
+            "name": "Desafinado"
+          }
+        ]
+      },
+      {
+        "title": "Weill: The Seven Deadly Sins",
+        "tracks": [
+          {
+            "name": "Symphony No. 2: III. Allegro vivace"
+          }
+        ]
+      },
+      {
+        "title": "Worlds",
+        "tracks": [
+          {
+            "name": "OAM's Blues"
+          }
+        ]
+      },
+      {
+        "title": "Zooropa",
+        "tracks": [
+          {
+            "name": "Zooropa"
+          }
+        ]
+      }
+    ]
+  }
+}
