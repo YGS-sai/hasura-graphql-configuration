@@ -1,0 +1,47 @@
+4. Using a GraphQL mutation, add your favorite artist and one of their albums that isn’t in the dataset.
+
+Query:
+
+mutation AddArtistAndAlbum {
+  insert_artist_one(
+    object: {
+      artist_id: 277,
+      name: "John Hasura",
+      albums: {
+        data: {
+          album_id: 349,
+          title: "The Best of Hasura"
+        }
+      }
+    }
+  ) {
+    artist_id
+    name
+    albums {
+      album_id
+      title
+    }
+  }
+}
+
+Output:
+
+{
+  "data": {
+    "insert_artist_one": {
+      "artist_id": 277,
+      "name": "John Hasura",
+      "albums": [
+        {
+          "album_id": 349,
+          "title": "The Best of Hasura"
+        }
+      ]
+    }
+  }
+}
+
+
+5. How did you identify which ID to include in the mutation?
+
+I just retrieved the number of records or number of artists present and came to know that there are just 275 artists and same with the albums and then included the unique one’s which were not present in the dataset
