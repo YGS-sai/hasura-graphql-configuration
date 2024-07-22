@@ -1,0 +1,23 @@
+How Many Artists Are in the Database?
+
+GraphQL Query:
+
+query GetArtistsCount {
+  artist_aggregate {
+    aggregate {
+      count
+    }
+  }
+}
+
+GraphQL Result Set:
+
+{
+  "data": {
+    "artist_aggregate": {
+      "aggregate": {
+        "count": 275
+      }
+    }
+  }
+}
