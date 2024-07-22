@@ -1,0 +1,27 @@
+Get all albums for artist id = 5 without specifying a where clause?
+
+Created a seperate role and utilized it in the request headers and relied on permission settings to automatically filter the data and set the permissionscorrectly for the artists and albums tables.
+
+Query - 
+
+query albumartistid5 {
+  album {
+    album_id
+    title
+  }
+}
+
+
+
+Output -
+
+{
+  "data": {
+    "album": [
+      {
+        "album_id": 7,
+        "title": "Facelift"
+      }
+    ]
+  }
+}
